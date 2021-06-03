@@ -8,6 +8,7 @@ import Sidebar from './components/site/Sidebar';
 import {
   BrowserRouter as Router
 } from 'react-router-dom';
+import FunctionalComponentDemo from './components/concepts/FunctionalComponents/FunctionalComponentDemo'
 
 function App() {
   return (
