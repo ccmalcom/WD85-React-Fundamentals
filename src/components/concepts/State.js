@@ -15,6 +15,8 @@ const State = () => {
                     <dd>useState is a hook baked into react</dd>
                     <dt>Triggers re-renders</dt>
                     <dd>Like with props changes, changing the state of a component re-renders the whole component</dd>
+                    <dt>Planning</dt>
+                    <dd>Thinking about state first is a good way to organization your application. When we think about what data we need to store, use, and change, we can think about what we want to put in our state to allow us to do that.</dd>
                 </dl>
             </div>
             <StateExample />
