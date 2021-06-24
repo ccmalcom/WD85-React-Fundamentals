@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import NytResults from './NytResults';
 
 const baseURL = 'https://api.nytimes.com/svc/search/v2/articlesearch.json';
-const key = 'DgIVGe24WvyESgpCgb9gS3tOy91slizg';
+const key = process.env.REACT_APP_NYT_API_KEY;
 
 const NytApp = () =>{
     const[ search, setSearch ] = useState('');
@@ -15,6 +15,7 @@ const NytApp = () =>{
         let url = `${baseURL}?api-key=${key}&page=${pageNumber}&q=${search}`;
         url = startDate ? url + `&begin_date=${startDate}` : url;
         url = endDate ? url + `&end_date=${endDate}` : url;
+        console.log(url);
 
         fetch(url)
         .then(res => res.json())
